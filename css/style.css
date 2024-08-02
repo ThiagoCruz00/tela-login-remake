@@ -13,6 +13,9 @@ body{
     background-image: linear-gradient(to right bottom, #008aca, #fff , #fff , #008aca);
     width: 100vw;
     padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 section{
@@ -127,4 +130,34 @@ article > div > h2{
     display: flex;
     align-items: center;
     
+}
+
+@media screen and (max-width: 600px){
+    .container-imagem{
+        display: none;
+    }
+    .container-login{
+        width: 100%;
+        padding: 65px 25px;
+        height: 100%;
+        
+    }
+    body{
+        padding: 20px;
+    }
+    .container-senha{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: start;
+    }
+    .container-senha > div{
+        display: flex;
+        justify-content: left;
+        width: 100%; 
+    }
+    .container-senha > a{
+        margin-top: 10px;
+    }
+
 }
